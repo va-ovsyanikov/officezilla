@@ -1,0 +1,834 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 993px){
+
+    header, .content, .footer  {
+        box-shadow: none;
+    }
+    .menu_contact .nav_menu{
+        overflow: hidden; 
+    } 
+    .menu_contact .nav_menu li{
+        display: none ;
+        width: 100%;
+        padding-left: 10px;
+    }
+    .menu_button{
+        display: block;  
+    }
+    .menu_contact li a{
+        float: left;
+    }
+    .menu_contact li{
+        border-right: none;
+        border-top: 1px solid #ebc263;
+    }
+    .menu_contact li:last-child{
+        border-bottom: 1px solid #ebc263;
+    }
+    .menu_contact li.live_chat div{
+        float: left;    
+    }
+    .menu_contact li.colocal{
+        width: 100%; 
+        padding-left: 13px;  
+    }
+    .menu_contact li.colocal span{
+        float: left;
+    }
+    .menu_contact li.phone{
+        width: 100%;
+        padding-left: 10px;
+    }
+    .menu_contact li.phone span{
+        float: left;
+    }
+    .menu_contact li a.franchise{
+        margin-left: 5px;
+    }
+    .menu_contact li:hover{
+        background-color: #D8A22D;
+    }
+    .menu_contact li.accountSettings ul.left-menu-block li {
+        display:block !important;
+        width: 84%;      
+    } 
+    .menu_contact li.accountSettings .my_account {
+        width: 135px;
+    }
+    .menu_contact li.accountSettings div.arrow-top {
+        left: 12px;
+    }
+    .menu_contact li.accountSettings .my_account {
+        left: 4px;
+    }
+    .menu_contact {
+        position: relative;
+    }
+    .menu_contact ul.nav_menu{
+        position: absolute;
+        top:35px;
+        left: 0;
+        z-index: 3;
+        width: 100%;
+        background-color: #e5ad30;
+    }
+    .basketvalue{
+        float: none;
+    }
+    .search{
+        float: right;
+        margin-left: 0;
+        margin-right: 4.8%;
+    }
+    .menu_products .menu_button_bottom{
+        display: block;
+    }
+    .shopperStatus{
+        display: none;
+    }
+    .menu_products ul.megaMenu .firstMegaMenu {
+        display: none;
+        float: left;
+        width: 100%;
+    }
+    .menu_products  .megaMenu {
+        min-width: 100%;
+        position: absolute;
+        top:37px;
+        left: 0;
+        z-index: 2;
+    }
+    .menu_products .megaMenu .firstMegaMenu{
+        border-bottom: 1px solid  #5891b6;
+    }
+    .menu_products  .naw_Wrapper li{
+        display: block !important;
+    }
+    .menu_products .megaMenu .firstMegaMenu > a{
+        float:left;
+        width: 98%;
+        line-height: 48px;    
+        text-align: left; 
+        padding: 0 0 0 2%;
+        border-right: none;
+        border-left: none;
+    }
+    .menu_products .menu_button_bottom span:hover,
+    .menu_products .menu_button_bottom i:hover{
+        color: #fff;
+    }
+    .menu_products .menu_button_bottom span:active,
+    .menu_products .menu_button_bottom i:active{
+        color: #820a0d;
+    }
+    .menu_products .menu_button_bottom div:hover{
+        color: #fff;
+    }
+    .menu_products .menu_button_bottom div:active{
+        color: #820a0d;
+    }
+    .menu_products li.firstMegaMenu:hover a,
+    .menu_products li.firstMegaMenu:active a{
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    .menu_products ul.megaMenu li.firstMegaMenu:nth-of-type(1) .naw_Wrapper{
+        left:0;
+        top:48px;
+        border: none;
+    }
+    .menu_products ul.megaMenu li.firstMegaMenu:nth-of-type(2) .naw_Wrapper{
+        left: 0;
+        top:97px;
+        border: none;
+    }
+    .menu_products ul.megaMenu li.firstMegaMenu:nth-of-type(3) .naw_Wrapper{
+        left:0;
+        top:146px;
+        border: none;
+    }
+    .menu_products ul.megaMenu li.firstMegaMenu:nth-of-type(4) .naw_Wrapper{
+        left:0;
+        top:194px;
+        border: none;
+    }
+    .img_left, .img_right {
+        display: none;
+    }
+    .breadcrumbMid{
+        width: 100%;
+    } 
+    /*----------------End Header-----------------*/
+
+
+    /* ---------content--------*/
+    .contentBox{
+        display: none;
+    }
+    .img_featuredHeader {
+        display: none;
+    }
+    .rightColumn{
+        display: none;
+    }
+    .featuredZone h1, .specialsZone h1,
+    .contentBox_checkout h1{
+        padding-left: 3%;
+        font-size: 22px;
+        height: 50px;
+        line-height: 50px;
+    }
+    .featuredProducts{
+        width: 100%;
+    }
+    .featuredZone{
+        width: 100%;
+    }
+    .wrapProducts{
+        margin:1%;
+        width: 98%;
+    }
+    .productCell{
+        width: 45.5%;
+        height: auto;
+        padding: 10px 2% 9px;
+    }
+    .productTitle{
+        float: none;
+        line-height: 15px;
+    }
+    .productHeadline{
+        float: none;
+        width: auto;
+    }
+    .productSummary{
+        float: none;
+        width: auto;
+    }
+    .img_featuredZone{
+        display: none;
+    }
+    .footerTopLeft, .footerTopRight{
+        display: none;
+    }
+    .footerTop ul{
+        margin-left: 3%;
+    }
+    .footerLogo{
+        display: none;
+    }
+    /*  ------shopping cart-----*/
+
+    .contentBox_shoppingCart{
+        padding: 10px 0;
+    } 
+    .shoppingCartCheckout_Top h1{
+        font-size: 27px;
+        line-height: 40px;
+    }
+    .promoCode, .accredited_business,
+    .pay_pat{
+        display: none;
+    }
+    .shoppingCartResult{
+        float: left;
+    }
+    .shoppingCartCheckout_Bottom{
+        float: right;
+    }
+    .shoppingCartCheckout_Bottom button{
+        margin-top: 38%;
+        float: right;
+    } 
+
+    /* -------checkout-------------*/
+
+    .OPC_CustomerServiceWrap, .OPC_MiniCartWrap,
+    .hide{
+        display: none;
+    }
+    .address {
+        padding: 0px;
+    }
+    .shopping{
+        float: none;
+        margin-left: 38px;
+        width: 200px;
+    }
+    .contentBox_checkout h1{
+        margin-top: 20px;
+    }
+    /*-------button back shopping Cart (checkout)-------------*/
+
+    .button_shoppingCart button{
+        margin-left:10px;
+    }
+    /*-------------------------------------------------*/
+
+
+
+
+}
+@media only screen and (max-width : 800px) {
+
+    .featuredProductCell{
+        width: 31%;
+        padding: 10px 0 0 10px;
+        background-image: none;
+    }
+}
+
+
+@media only screen and (max-width : 768px) {
+    .zillaHeader{
+        background-image: none;
+        text-align: center;
+    }
+    .logo{
+        float: none;
+        display: inline-block;
+        margin-top: 10px;
+    }
+    .search{
+        float: none;
+        margin-left: 0;
+        margin-right: 0;
+        height: 80px;
+    }
+    header  form {
+        float: none;
+        display: inline-block;
+        margin-left: 7%;
+    }
+    .search h4{
+        margin-top:15px;
+        margin-left: 0; 
+    }
+    /*  -------END HEADER------------*/
+
+
+    /*  ----------content---------*/
+
+    .featuredZone h1, .specialsZone h1,
+    .contentBox_checkout h1{
+        height: 45px;
+        font-size: 21px;
+        line-height: 45px;
+    }
+    .footerTop{
+        height: 45px;
+    }
+    .footerTop  li{
+        line-height: 43px;
+    }
+    /*  ------shopping cart-----*/
+
+    .shoppingCartCheckout_Top h1{
+        font-size: 24px;
+    }
+
+    /* -------checkout -------*/
+    .address{
+        width: 100%;
+    }
+    .OnePageCheckoutWrap{
+        padding: 1%;
+    }
+
+    .contentBox_checkout .OPLoginTextBox{
+        padding-left: 10px;
+    }
+
+    /*-------button back shopping Cart (checkout)-------------*/
+
+    .button_shoppingCart button{
+        margin-top:10px;
+    }
+    /*-------------------------------------------------*/
+
+
+    .contentBox_checkout form {
+        line-height: 10px;
+        padding-left: 10px;
+    }
+    .contentBox_checkout form p {
+        padding-top: 7px;
+    }
+    .contentBox_checkout form input {
+        margin-left: 0;
+    }
+    .contentBox_checkout form .OPEmphasize{
+        margin-left: 0;
+    }
+    .contentBox_checkout form select{
+        margin-left: 0;
+    }
+    .OPContinueShoppingButton{
+        margin-bottom: 15px;
+    }
+
+    /*  -----------select_payment-------------*/
+
+    .PanelCreditCard form input{
+        width: 130px;
+    }
+
+    /*----------Create An Account----------*/
+
+    .create_an_account form label{
+        display: table-row;
+    }
+}
+@media only screen and (max-width : 600px) {
+
+    .featuredProductCell{
+        width: 31%;
+    }
+
+    /*  ------shopping cart-----*/
+
+    .shoppingCartCheckout_Top h1{
+        font-size: 24px;
+    }
+    .pnlCartSummary {
+        margin-top: 10px;
+    }
+    .cartProductCell, .cartProductData{
+        float: none;
+        width: 100%;
+    }
+    .cartQuantityCell, .cartPriceCell, .cartSubTotal {
+        text-align: center;
+    }
+    .pnlCartSummary h4{
+        padding: 10px 12px;
+    }
+    .cartQtyBox{
+        padding-right: 0;
+        width:100%; 
+    }
+    .cartQtyBox a {
+        left: -5px;
+        position: relative;
+    }
+    .for-free-shipping a, .for-free-shipping span{
+        font-size: 12px;
+    }
+
+    /* ---------checkout 3----------*/
+
+    .divShippingName input[type="text"]{
+        width: 53%;
+
+    }
+    .AddressEditorBlock{
+        margin-left: 0;
+    }
+    /*--------credit cart-----------------*/
+
+    .PanelCreditCard form input{
+        width: 130px;
+    }
+
+
+}
+@media only screen and (max-width : 520px) {
+
+    /* --------------modal--------------*/
+    .remodal h3 {
+        overflow: hidden;
+    }
+    .address-list {
+        text-align: left; 
+    }
+    .new_Address{
+        display: block;
+    }
+    .filters{
+        overflow: hidden;
+    }
+    .address-book-container input{
+        width:190px;
+    }
+    .address-book-container select{
+        width: 190px;
+        margin-left: 29px;
+        margin-top: 3px;
+    }
+    /*----------NewShippNewShippingAddressModal------*/
+
+    .addressBookItem{
+        width: 44%;
+    }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+    /*--------- Header----------  */ 
+
+    header input[type="search"]{
+        width: 278px;
+    }
+
+    header  form {
+        margin-left: 1%;
+    }
+    .search h4{
+        font-size: 13px;
+        margin-left:-6%;
+    }
+
+    /*  ----------content--------- */
+
+    .featuredProductCell{
+        width: 45%;  
+    }
+    .productCell{
+        width: auto;
+        float: none;
+        border-bottom: 1px solid #ddd !important;
+        border-left:none;
+        border-right:none;
+        border-top: none;
+    }
+    .featuredZone h1, .specialsZone h1{
+        height: 35px;
+        font-size: 16px;
+        line-height: 35px;
+    }
+    .contentBox_checkout h1{
+        height: 42px;
+        font-size: 20px;
+        line-height: 42px;
+    }   
+    .site_info{
+        float: none;
+        margin-top: 20px;
+    }
+    .footerTop{
+        height: 35px;
+    }
+    .footerTop  li{
+        line-height: 33px;
+    }
+
+    /* -------checkout---------*/
+
+    /*-------button back shopping Cart  (checkout)-------------*/
+
+    .button_shoppingCart button{
+        margin-left:0;
+    }
+    .button_shoppingCart{
+        text-align: center;
+    }
+    /*-------------------------------------------------*/
+
+    .contentBox_checkout form label{
+        display: block;
+    }
+    .contentBox_checkout .OPLoginTextBox{
+        width: 91%;
+        margin-bottom: 5px;
+    }
+    .contentBox_checkout form {
+        width: 94%;
+    }
+    .shipping_address form input {
+        width: 97%;
+    }
+    .shipping_address input[type="submit"]{
+        margin-right: 0;
+    }
+    .shopping{
+        margin: 0 auto;
+    }
+    .shoppingCartResult {
+        float: none;
+        text-align: center;
+    }
+    .cartSummarySubTotal {
+        display: inline-block;
+        float: none;
+    }
+    .shoppingCartCheckout_Bottom{
+        float: none;
+        text-align: center;
+    }
+    .shoppingCartCheckout_Bottom button{
+        float: none;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+
+    /* -------checkout 3---------*/
+
+    .email_address a{
+        float: none;
+        margin-left: 5px;
+        display: inline-block;
+    }
+    .email_address .OPEmphasize{
+        margin-left: 5px;
+    }
+    .shipAddressWrap{
+        width: 100%;
+    } 
+    .AddressEditorBlock{
+        margin-left: 5px;
+    }
+
+    /*  -----credit cart---------*/
+
+    .PanelCreditCard form input{
+        width: 130px;
+    }
+    .CreditCardIconsWrap {
+        display: block;
+        top: -2px;
+        padding-left: 5px;
+    }
+    .select_payment input[type="submit"] {
+        margin-right: 0;
+    }
+
+    /*----------Create An Account----------*/
+
+    .Requirements {
+        display: block;
+        margin-bottom: 5px;
+        margin-left: 114px;
+
+    }
+}  
+
+@media only screen and (max-width : 400px){
+
+    /*-------NewShippNewShippingAddressModal-----*/
+
+    .addressModal form p{
+        text-align: left;
+    }
+    .addressModal form label{
+        display: block;
+    }
+    .addressModal form {
+        line-height: 10px;
+        padding-left: 10px;
+    }
+    .addressModal form p {
+        padding-top: 7px;
+    }
+    .addressModal form input {
+        margin-left: 0;
+        width:95%;
+    }
+    .addressModal form select{
+        margin-left: 0;
+    }
+    .addressModal input[type="checkbox"]{
+        margin-left: 5%;
+    }
+    .addressModal h3 {
+        padding: 15px 0 15px 15px ;
+    } 
+    .footer_addressModal{
+        padding-left: 30px;
+    } 
+    .addressBookItem{
+        width: 96%;
+    }  
+    /*-----------select_payment---------*/
+
+
+
+}
+@media only screen and (max-width: 350px){
+    .search h4{
+        font-size: 10px;
+        margin-left: -11%;	
+    }
+    header   input[type="search"]{
+        width: 240px;
+    }
+    .menu_button .basket{
+        line-height: 34px;
+    }
+    .menu_button .basket  i{
+        font-size: 20px;
+        position: relative;
+        top:-2px;
+    }
+    .menu_button .basket .count{
+        font-size: 13px;
+    }	
+    .menu_button .basket .basketvalue{
+        font-size: 13px;	
+    }
+    /*-------modal-------*/
+
+
+    /* ------NewShippNewShippingAddressModal-------*/
+
+    .addressModal h3 {
+        font-size: 115%;
+    }
+    /*  -------------Select Payment --------------*/
+
+    .paymentMethodContents{
+        margin-left: 0;
+    }
+    .PaymentMethod {
+        margin-left: 0;
+    }
+    .PanelCreditCard form{
+        padding-left: 0;
+    }
+    .select_payment .billAddressWrap form{
+        padding-left: 0;
+    } 
+
+    .select_payment .billAddressWrap form input {
+        width: 253px;
+    }
+
+    /*----------Create An Account----------*/
+
+    .create_an_account form{
+        padding-left: 0;
+    }
+
+    /*------------  Complete Your Order------*/
+
+    .complete_your_order input[type="submit"]{
+        margin-bottom: 15px;
+    } 
+    .complete_your_order a{
+        margin-left: 5px;
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+    header   input[type="search"]{
+        width: 230px;
+    }
+    .menu_products ul.megaMenu li.firstMegaMenu:nth-of-type(1) .naw_Wrapper{
+        width: 275px;  
+    }
+    .menu_products ul.megaMenu li.firstMegaMenu:nth-of-type(2) .naw_Wrapper{
+        width: 275px;
+    }
+    .menu_products ul.megaMenu li.firstMegaMenu:nth-of-type(3) .naw_Wrapper{
+        width: 275px;
+    }
+    .menu_products ul.megaMenu li.firstMegaMenu:nth-of-type(4) .naw_Wrapper{
+        width: 275px;
+    }
+
+    /*  -------checkout----------------*/
+
+    /* ----------modal-------------*/
+
+    .remodal h3 {
+        padding: 15px 0 15px 20px;
+    }
+    .filters {
+        padding-left: 15px;
+    }    
+    .filters {
+        padding-right: 21px;
+    }
+    .address-book-container select{
+        margin-left: 0;
+    }
+
+    /* -------------Select Payment --------------*/
+
+    .select_payment .billAddressWrap form input {
+        width: 253px;
+    }
+
+
+
+}
+
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+} 
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+
+@media only screen and (min-width : 520px) {
+    /* .addressBookItem{
+    width: 44%;
+    text-align: left;
+}*/
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 993px) {
+    .menu_contact li {
+        display: block !important;    
+    }
+    .menu_products .firstMegaMenu {
+        display: table-cell !important;
+    }
+    .menu_products  .naw_Wrapper li{
+        display: block !important;
+    }
+    .menu_button .basket{
+        display: none;
+    }
+    .productTitle a:hover{
+        text-decoration: underline;
+    }
+    .AddToCartButton:hover{
+        background-image:-moz-linear-gradient(center top , #b82f33, #591517);
+        background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#b82f33), to(#591517));
+        background-image:linear-gradient(center top , #b82f33, #591517);
+        background-position: 0 0;
+        background-repeat: no-repeat;
+    }
+    .footerTop  a:hover{
+        color: #fff;
+    }
+    .company a:hover, .help a:hover, .site_info a:hover{
+        color: #eee;
+        text-decoration: underline;
+    }
+    .company .social a:hover{
+        text-decoration: none;
+    }
+    /*-------button back shopping Cart (checkout)-------------*/
+
+    .button_shoppingCart button{
+        display: none; 
+    }
+    /*-------------------------------------------------*/
+
+}
+@media only screen and (min-width : 1050px) {
+    /*header .menu_products li a{
+    font-size: 14px;*/
+}
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1060px) {
+}       

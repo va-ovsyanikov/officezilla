@@ -1,0 +1,1669 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>OfficeZilla Office smartcheckout</title>
+        <meta name="viewport" content="width=device-width; initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <link rel="icon"  href="images/favicon/favicon.png" type="image/png">
+        <link href="css/jquery.bxslider.css" rel="stylesheet" />     
+        <link rel="stylesheet" href="css/fonts.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/remodal-default-theme.css">
+        <link rel="stylesheet" href="css/remodal.css">
+        <link rel="stylesheet" href="css/media.css" />
+        <link rel="stylesheet" href="css/fontello.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/jquery.bxslider.min.js"></script>
+        <script src="js/remodal.js"></script> 
+        <script src="js/common.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <nav >
+                    <div class="menu_contact"> 
+                        <div class="menu_button">
+                            <div class="basket">
+                                <a href="shoppingcart.aspx">
+                                    <i class="icon-basket"> &nbsp;</i>
+                                    <span class="count">0 item(s) </span>   
+                                    <span class="basketvalue">$.00</span>
+                                </a> 
+                            </div>
+                            <div class="text_menu_top">
+                                <!-- <span>Menu Contact &#187;</span> -->
+                                <i class="icon-menu"></i>
+                            </div>
+                        </div>
+                        <ul class="nav_menu">
+                            <li class="accountSettings">
+                                <a href="account.aspx"><span class="icon-user   fontello"></span>My Account</a>
+                                <div class="my_account">
+                                    <div class="arrow-top"></div>
+                                    <ul class="left-menu-block">
+                                        <li>
+                                            <a class="icon-login fontello" href="/signin.aspx?returnUrl=%2F">Sign in</a>
+                                        </li>
+                                        <li>
+                                            <a class="icon-user fontello" href="/createaccount.aspx?returnUrl=%2F">Register</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="colocal">
+                                <span class="icon-bell fontello"></span>
+                                <span class="value">0</span>
+                            </li>
+                            <li class="track">
+                                <a href="orderhistory.aspx">
+                                    <span class="icon-location fontello"></span>
+                                    Track My Stuff
+                                </a>
+                            </li>
+                            <li class="live_chat">
+                                <div>
+                                    <a href="#">
+                                        <span class="icon-chat fontello chat"></span>
+                                        <span class="description">Live Support</span><br/>
+                                        <span class="prompt">click to chat</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="contact_us">
+                                <a href="t-contact.aspx">
+                                    <span class="icon-mail fontello"></span>
+                                    Contact Us
+                                </a>
+                            </li>
+                            <li  class="phone">
+                                <span class="icon-phone fontello"></span>
+                                <span>1-800-699-7549</span>
+                            </li>
+                            <li>
+                                <a class="franchise" target="_Blank" href="http://franchise.officezilla.com">
+                                    <em>New!</em>
+                                    Franchise Info »
+                                </a>
+                            </li>
+                        </ul>
+                    </div>  
+                </nav>
+                <section>
+                    <div class="zillaHeader">
+                        <div  class="logo">
+                            <a href="/"><img title="OfficeZilla Discount Office Supplies" width="250" height="90" alt="OfficeZilla Discount Office Supplies" src="images/header/logo.png"></a>
+                        </div>
+                        <div class="shopperStatus">
+                            <div class="shippingStatus">
+                                <span>I don't see your name tag, better get one!</span>
+                                <br/>
+                                <span >
+                                    <a class="account" href="/signin.aspx?returnUrl=%2F" style="">Sign in</a>
+                                    |
+                                    <a class="account register" href="/createaccount.aspx?returnUrl=%2F">Register</a>
+                                </span>
+                            </div>
+                            <div class="shoppingbag">
+                                <a href="shoppingcart.aspx">
+                                    <div class="check-out" >
+                                        <img width="46" height="32" alt="Shopping Cart" src="images/header/ShoppingCart.png">
+                                    </div>
+                                    <div class="minicartItems">
+                                        <span class="count">0 item(s) </span>        
+                                        <span class="basketvalue">$.00</span>
+                                        <br>
+                                        <span class="free_ship"> FREE shipping over $45 </span>
+                                    </div>
+                                </a>
+                                <div class="miniCartModalFlyout">
+                                    <div class="imageCell">
+                                        <a href="/p-three-tier-wire-rolling-cart-28w-x-16d-x-39h-black-anthracite-ALESW342416BA.aspx">
+                                            <img class="miniCartModalItemImage" src="https://content.oppictures.com/Master_Images/Master_Variants/Variant_65/11722.jpg" alt="ALESW342416BA">
+                                        </a>
+                                    </div>
+                                    <div class="infoCell">
+                                        <div class="bg_a">
+                                            <a class="miniCartModalItemName" href="/p-three-tier-wire-rolling-cart-28w-x-16d-x-39h-black-anthracite-ALESW342416BA.aspx">Alera  Three-Tier Wire Rolling Cart, 28w x 16d x 39h, Black Anthracite</a>
+                                            <span class="miniCartModalItemQty">QTY 1</span>
+                                            <span class="miniCartModalItemPrice">$65.78</span>
+                                        </div>    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search">
+                            <h4>Search over 50,000 business essentials in stock!</h4>    
+                            <form  name="search" method="post">
+                                <span class="icon-search">&nbsp;</span>
+                                <input type="search" autocomplete="off" value="" name="searchterm" placeholder="Product, category or brand name" />
+                                <a class="link_button" href="javascript:void(0);">GO</a>
+                            </form>
+                        </div>
+                        <div style="clear:both"></div>
+                    </div>
+                    <div style="clear:both"></div>
+                </section>
+                <nav>
+                    <div class="menu_products">
+                        <div class="menu_button_bottom">
+                            <div>
+                                <!-- <span>Menu Products &#187;</span> -->
+                                <i class="icon-menu"></i>
+                            </div>    
+                        </div>
+                        <ul class="megaMenu">
+                            <li class="firstMegaMenu">
+                                <a href="javascript:void(0);">Office Supplies</a>
+                                <div class="naw_Wrapper">
+                                    <ul>
+                                        <li  class="column"><a href="c-batteries-electrical-supplies-4294594021.aspx">Batteries &amp; Electrical Supplies</a>
+                                        </li>
+                                        <li class="column"><a href="c-binders-binding-supplies-4294594011.aspx">Binders &amp; Binding Supplies
+                                            </a>
+                                        </li>    
+                                        <li class="column"><a 
+                                                              href="c-breakroom-supplies-4294593857.aspx">Breakroom Supplies</a>
+                                        </li>                         
+                                        <li class="column"><a href="c-calendars-planners-personal-organizers-4294593991.aspx">Calendars, Planners &amp; Personal Organizers</a>
+                                        </li>   
+                                        <li class="column"><a href="c-carrying-cases-4294593981.aspx">Carrying Cases</a>
+                                        </li>   
+                                        <li class="column"><a href="c-cash-handling-4294593977.aspx">Cash Handling</a>
+                                        </li>    
+                                        <li class="column"><a href="c-classroom-teaching-learning-materials-4294593965.aspx">Classroom Teaching &amp; Learning Materials</a>
+                                        </li>    
+                                        <li class="column"><a href="c-crafts-recreation-room-products-4294593958.aspx">Crafts &amp; Recreation Room Products</a>
+                                        </li>    
+                                        <li class="column"><a href="c-cutting-measuring-devices-4294593921.aspx">Cutting &amp; Measuring Devices</a>
+                                        </li>    
+                                        <li class="column"><a href="c-desk-accessories-workspace-organizers-4294593913.aspx">Desk Accessories &amp; Workspace Organizers</a>
+                                        </li>    
+                                        <li class="column"><a href="c-envelopes-mailers-shipping-supplies-4294593887.aspx">Envelopes, Mailers &amp; Shipping Supplies</a>
+                                        </li>
+                                        <li class="column"><a href="c-file-storage-cabinets-4294593880.aspx">File &amp; Storage Cabinets</a>
+                                        </li>    
+                                        <li class="column"><a href="c-file-folders-portable-storage-box-files-4294593876.aspx">File Folders, Portable &amp; Storage Box Files</a>
+                                        </li>    
+                                        <li class="column"><a href="c-forms-recordkeeping-reference-materials-4294593855.aspx">Forms, Recordkeeping &amp; Reference Materials</a>
+                                        </li>                           
+                                        <li class="column"><a href="c-general-office-accessories-4294593839.aspx">General Office Accessories</a>
+                                        </li>    
+                                        <li class="column"><a href="c-identification-badges-4294593823.aspx">Identification Badges</a>
+                                        </li>                  
+                                        <li class="column"><a href="c-index-dividers-4294593817.aspx">Index Dividers</a>
+                                        </li>    
+                                        <li class="column"><a href="c-labels-stickers-4294593815.aspx">Labels &amp; Stickers</a>
+                                        </li>    
+                                        <li class="column"><a 
+                                                              class="megaColumn" href="c-mouse-pads-wrist-rests-4294593698.aspx">Mouse Pads &amp; Wrist Rests</a>
+                                        </li>    
+                                        <li class="column"><a href="c-paper-printable-media-4294593806.aspx">Paper &amp; Printable Media</a>
+                                        </li>    
+                                        <li class="column"><a href="c-presentation-display-scheduling-boards-4294593787.aspx">Presentation/Display &amp; Scheduling Boards</a>
+                                        </li>    
+                                        <li class="column"><a href="c-room-accessories-4294593780.aspx">Room Accessories</a>
+                                        </li>    
+                                        <li class="column"><a href="c-safety-security-4294593770.aspx">Safety &amp; Security</a>
+                                        </li>   
+                                        <li class="column"><a href="c-shipping-mailroom-4294593767.aspx">Shipping &amp; Mailroom</a>
+                                        </li>    
+                                        <li class="column"><a href="c-shredders-accessories-4294593702.aspx">Shredders &amp; Accessories</a>
+                                        </li>    
+                                        <li class="column"><a href="c-stamps-stamp-supplies-4294593758.aspx">Stamps &amp; Stamp Supplies</a>
+                                        </li>
+                                        <li class="column"><a href="c-staplers-punches-4294593751.aspx">Staplers &amp; Punches</a>
+                                        </li>
+                                        <li class="column"><a href="c-tags-tickets-4294593745.aspx">Tags &amp; Tickets</a>
+                                        </li>
+                                        <li class="column"><a href="c-tape-adhesives-fasteners-4294593742.aspx">Tape, Adhesives &amp; Fasteners</a>
+                                        </li>
+                                        <li class="column"><a href="c-tools-4294593726.aspx">Tools</a>
+                                        </li>
+                                        <li class="column"><a href="c-writing-correction-supplies-4294593722.aspx">Writing &amp; Correction Supplies</a>
+                                        </li>
+                                    </ul>
+                                </div>        
+                            </li>
+                            <li class="firstMegaMenu">
+                                <a href="javascript:void(0);">Cleaning & Breakroom</a>
+                                <div class="naw_Wrapper">
+                                    <ul>
+                                        <li  class="column">
+                                            <a href="c-air-cleaners-fans-heaters-humidifiers-4294594224.aspx">Air Cleaners, Fans, Heaters & Humidifiers</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-appliances-4294594214.aspx">Appliances</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-bags-liners-4294594210.aspx">Bags & Liners</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-batteries-electrical-supplies-4294594206.aspx">Batteries & Electrical Supplies</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-beverages-4294594240.aspx">Beverages</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-breakroom-supplies-4294594120.aspx">Breakroom Supplies</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-candles-4293941795.aspx">Candles</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-carts-stands-4294594029.aspx">Carts & Stands</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-cleaning-products-4294594196.aspx">Cleaning Products</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-cleaning-tools-4294594188.aspx">Cleaning Tools</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-cups-plates-utensils-4294594158.aspx">Cups, Plates & Utensils</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-dollies-hand-trucks-4294594026.aspx">Dollies & Hand Trucks</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-first-aid-health-supplies-4294594150.aspx">First Aid & Health Supplies</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-food-4294594230.aspx">Food</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-hardware-tools-accessories-4294594099.aspx">Hardware, Tools & Accessories</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-industrial-supplies-4294090553.aspx">Industrial Supplies</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-personal-hygiene-products-4294594084.aspx">Personal Hygiene Products</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-restroom-cleaners-accessories-4294594074.aspx">Restroom Cleaners & Accessories</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-safety-security-4294594068.aspx">Safety & Security</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-towels-tissues-4294594039.aspx">Towels & Tissues</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-waste-receptacles-accessories-4294594035.aspx">Waste Receptacles & Accessories</a>
+                                        </li> 
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="firstMegaMenu">
+                                <a href="/g-64-furniture.aspx">Furniture</a>
+                                <div class="naw_Wrapper">
+                                    <ul>
+                                        <li class="column">
+                                            <a href="c-back-supports-footrests-foot-stools-4294594320.aspx">Back Supports, Footrests & Foot Stools</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-bookcases-shelving-4294594316.aspx">Bookcases & Shelving</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-carts-stands-4294594311.aspx">Carts & Stands</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-chair-mats-floor-mats-4294594306.aspx">Chair Mats & Floor Mats</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-chairs-stools-seating-accessories-4294594303.aspx">Chairs, Stools & Seating Accessories</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-desks-workstations-4294594295.aspx">Desks & Workstations</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-file-storage-cabinets-4294594269.aspx">File & Storage Cabinets</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-furniture-repair-supplies-4294594263.aspx">Furniture Repair & Supplies</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-garment-racks-hangers-4294594298.aspx">Garment Racks & Hangers</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-lecterns-4294594260.aspx">Lecterns</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-literature-racks-display-cases-4294594257.aspx">Literature Racks & Display Cases</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-partitions-panels-4294594255.aspx">Partitions & Panels</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-reception-seating-sofas-4294594308.aspx">Reception Seating & Sofas</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-room-accessories-4294594251.aspx">Room Accessories</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-tables-4294594325.aspx">Tables</a>
+                                        </li> 
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="firstMegaMenu">
+                                <a href="javascript:void(0);">Technology</a>
+                                <div class="naw_Wrapper">
+                                    <ul>
+                                        <li class="column">
+                                            <a href="c-audio-visual-equipment-accessories-4294593584.aspx">Audio Visual Equipment & Accessories</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-backup-systems-disks-4294593572.aspx">Backup Systems & Disks</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-batteries-electrical-supplies-4294593569.aspx">Batteries & Electrical Supplies</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-calculators-4294593559.aspx">Calculators</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-cameras-camcorders-accessories-4294593555.aspx">Cameras, Camcorders & Accessories</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-computer-cleaners-4294593686.aspx">Computer Cleaners</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-computer-hardware-accessories-4294593684.aspx">Computer Hardware & Accessories</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-computer-keyboards-mice-4294593673.aspx">Computer Keyboards & Mice</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-computer-software-4294593668.aspx">Computer Software</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-data-storage-media-supplies-4294593666.aspx">Data Storage Media & Supplies</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-electronics-4294593648.aspx">Electronics</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-imaging-supplies-parts-4294593641.aspx">Imaging Supplies & Parts</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-laminator-laminator-supplies-4294593624.aspx">Laminator & Laminator Supplies</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-mobile-devices-and-accessories-4294038241.aspx">Mobile Devices and Accessories</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-mouse-pads-wrist-rests-4294593675.aspx">Mouse Pads & Wrist Rests</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-networking-cables-accessories-4294593621.aspx">Networking, Cables & Accessories</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-paper-printable-media-4294593616.aspx">Paper & Printable Media</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-printer-accessories-4294593557.aspx">Printer Accessories</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-printers-copier-fax-multifunction-machines-4294593610.aspx">Printers & Copier/Fax/Multifunction Machines</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-security-and-surveillance-systems-and-accessories-4293920396.aspx">Security and Surveillance Systems and Accessories</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-shredders-accessories-4294593604.aspx">Shredders & Accessories</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-telephones-telephone-accessories-4294593600.aspx">Telephones & Telephone Accessories</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-tools-4294593594.aspx">Tools</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-transcription-transcription-accessories-4294593592.aspx">Transcription & Transcription Accessories</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-typewriters-typewriter-accessories-4294593589.aspx">Typewriters & Typewriter Accessories</a>
+                                        </li>
+                                        <li class="column">
+                                            <a href="c-warranties-4294593586.aspx">Warranties</a>
+                                        </li>  
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="firstMegaMenu">
+                                <a href="/InkAndTonerFinder.aspx">Ink & Toner Finder</a>
+                            </li>
+                            <li class="firstMegaMenu">
+                                <a href="g-11-paper-finder.aspx">Paper Finder</a>
+                            </li>
+                            <li class="firstMegaMenu">                
+                                <a href="g-25-zilla-deals.aspx">Deals</a>
+                            </li>
+                            <li class="firstMegaMenu">
+                                <a href="rebates.aspx">Rebates</a>
+                            </li>
+                        </ul>
+                    </div>  
+                </nav>
+            </header>
+            <div class="img_left">&nbsp;</div>
+            <div class="img_right">&nbsp;</div>
+            <main>
+                <div class="content">
+                    <section>
+                        <div class="contentBox_checkout">
+                            <h1> 
+                                Secure Checkout
+                            </h1>
+                            <div class="OnePageCheckoutWrap">
+                                <div class="address">
+                                    <div class="onePageContents">
+
+                                        <!--       ------------- Email Address--------- -->
+
+                                        <div class="checkoutBlock">
+                                            <div class=" email_address">
+                                                <div class="checkoutHeader">
+                                                    <p>
+                                                        Email Address
+                                                    </p>
+                                                </div>
+                                                <input class="OPLoginTextBox" type="text" name="ctl00$PageContent$OnePageCheckout1$LoginView$txtEmailAddress" autofocus>
+                                                <a  href="javascript:__doPostBack('ctl00$PageContent$OnePageCheckout1$LoginView$linkSwitchUser','')">
+                                                    Not You?
+                                                </a>
+                                                <p class="OPEmphasize">Complete this order page to create an account and your next order will be even easier!</p>
+                                                <div style="clear:both"></div>
+                                            </div>
+                                            <div class="shipping_address">
+                                                <div class="checkoutHeader">
+                                                    <p>
+                                                        Shipping Address
+                                                    </p>
+                                                </div>
+                                                <div class="subSection">
+                                                    <div class="shipAddressWrap">
+                                                        <div>
+                                                            <span class="ShippingAddress_FirstName">ovsyanikov</span>
+                                                            <span class="ShippingAddress_LastName">vitalya</span>
+                                                        </div>
+                                                        <div>
+                                                            <span class="ShippingAddress_Phone">763423564235473264</span>
+                                                        </div>
+                                                        <div>
+                                                            <span class="ShippingAddress_Company">bmz</span>
+                                                        </div>
+                                                        <div >
+                                                            <span class="ShippingAddress_Address1">karibskogo d16 kv84</span>
+                                                        </div>
+                                                        <div>
+                                                            <span class="ShippingAddress_Address2">mkr16 d8 kv411</span>
+                                                        </div>
+                                                        <div>
+                                                            <span class="ShippingAddress_City">Schenectady</span>
+                                                            <span class="ShippingAddress_State">NY</span>
+                                                            <span class="ShippingAddress_Zip">12345</span>
+                                                        </div>
+                                                        <div>
+                                                            <span class="ShippingAddress_Country">United States</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="divShippingName">
+                                                        <span style="margin: 0 5px 0 3px; font-style: italic;">Ship to Name:</span>
+                                                        <input id="txtShippingName" class="binded ui-autocomplete-input" type="text" name="ctl00$PageContent$OnePageCheckout1$ShippingAddressStaticView$txtShippingName" autocomplete="off">
+                                                        <span class="ui-helper-hidden-accessible"></span>
+                                                    </div>
+                                                </div>
+                                                <div  class="AddressEditorBlock">
+                                                    <!--  -------модальное окно----- -->    <a class="icon-book
+                                                        HyperLinkShippingAddressBook"
+                                                                                               href="#modal"> 
+                                                    Address Book [1]</a>
+                                                    <br/>
+                                                    <a class="icon-pencil" href="#EditShippingAddressModal">Edit</a>
+                                                </div>
+                                                <div  class="multipleAddressesNotification hiddenNotification">
+                                                    <span class="icon-flag flag"></span>
+                                                    <p style="display:none;">
+                                                        Because you have
+                                                        <span id="ctl00_PageContent_OnePageCheckout1_ShippingAddressCount" style="display:none;"></span>
+                                                        shipping addresses we wanted to highlight where this order is shipping to.
+                                                    </p>
+                                                    <p >If you want it shipped to another address, please click on Address Book above.</p>
+                                                </div>
+                                            </div>
+                                        </div>  
+
+                                        <!-- -------------------Shipping Method----------- -->
+
+                                        <div class="checkoutBlock">
+                                            <div class="shipping_method">
+                                                <div class="checkoutHeader">
+                                                    <p>
+                                                        Shipping Method
+                                                    </p>
+                                                </div>
+                                                <div class="ShipMethodWrap">
+                                                    <input class="allowShipping" type="hidden" value="true" name="ctl00$PageContent$OnePageCheckout1$allowShipping">
+                                                    <span class="shipping-teaser">
+                                                        Shipping:
+                                                        <span>$10.50</span>     
+                                                        <span style="font-size: 12px; font-weight:normal;">
+                                                            (Only $10.60 more to get FREE shipping!
+                                                            <a href="/g-25-zilla-deals.aspx?t=1#sectionHeaderBar">May we suggest a few August bargains?</a>)
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!--    ------------  Select Payment----------------- -->
+
+                                        <div class="checkoutBlock">
+                                            <div class="select_payment">
+                                                <div class="checkoutHeader">
+                                                    <p>
+                                                        Select Payment
+                                                    </p>
+                                                </div>
+                                                <div class="checkout-payment">
+                                                    <div class="PaymentMethod">
+                                                        <input id="RadioCreditCard"  type="radio"  value="RadioCreditCard" name="ctl00$PageContent$OnePageCheckout1$PaymentView$PaymentMethod">
+                                                        <label for="RadioCreditCard">Credit Card</label>
+                                                        <img alt="Visa" src="images/checkout/VisaIcon.gif">
+                                                        <img alt="MasterCard" src="images/checkout/MasterCardIcon.gif">
+                                                        <img alt="Amex" src="images/checkout/AmexIcon.gif">
+                                                        <img style="height:19px;width:29px;" alt="Paypal" src="images/checkout/PaypalIcon.gif">
+                                                        <img alt="Discover" src="images/checkout/DiscoverIcon.gif">
+                                                    </div>
+                                                    <div class="paymentMethodContents">
+                                                        <div class="PanelBillSame">
+                                                            <p class="OPEmphasize">Billing Address: Same as shipping?</p>
+                                                            <p>
+                                                                <input id="BillSameYes" type="radio" checked="checked" value="BillSameYes" name="ctl00$PageContent$OnePageCheckout1$PaymentView$CreditCardPaymentViewForm$BillSame">
+                                                                <label for="BillSameYes">Yes</label>
+                                                            </p>
+                                                            <p>
+                                                                <input id="BillSameNo" type="radio" value="BillSameNo" name="ctl00$PageContent$OnePageCheckout1$PaymentView$CreditCardPaymentViewForm$BillSame">
+                                                                <label for="BillSameNo">No</label>
+                                                            </p>  
+                                                        </div>
+                                                        <div class="subSection">
+                                                            <p class="OPEmphasize">Billing Address</p>
+                                                            <div class="billAddressWrap" style="display:none;">
+                                                                <div>
+                                                                    <span class="ShippingAddress_FirstName">ovsyanikov</span>
+                                                                    <span class="ShippingAddress_LastName">vitalya</span>
+                                                                </div>
+                                                                <div>
+                                                                    <span class="ShippingAddress_Phone">763423564235473264</span>
+                                                                </div>
+                                                                <div>
+                                                                    <span class="ShippingAddress_Company">bmz</span>
+                                                                </div>
+                                                                <div>
+                                                                    <span class="ShippingAddress_Address1">karibskogo d16 kv84</span>
+                                                                </div>
+                                                                <div>
+                                                                    <span class="ShippingAddress_Address2">mkr16 d8 kv411</span>
+                                                                </div>
+                                                                <div>
+                                                                    <span class="ShippingAddress_City">Schenectady</span>
+                                                                    <span class="ShippingAddress_State">NY</span>
+                                                                    <span class="ShippingAddress_Zip">12345</span>
+                                                                </div>
+                                                                <div>
+                                                                    <span class="ShippingAddress_Country">United States</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="billAddressWrap">
+                                                                <form name="form2">
+                                                                    <label>
+                                                                        <p>First Name:<span style="color: red">*</span></p>
+                                                                        <input  type="text"  maxlength="49" name="ctl00$PageContent$OnePageCheckout1$ShippingAddressEditView$ShipFirstName" value="vitalya" />
+                                                                    </label>
+                                                                    <label>
+                                                                        <p>Last Name:<span style="color: red">*</span></p>          
+                                                                        <input  type="text" maxlength="49" name="ctl00$PageContent$OnePageCheckout1$ShippingAddressEditView$ShipLastName" value="ovsyanikov">
+                                                                    </label>
+                                                                    <label>
+                                                                        <p>Phone:<span style="color: red">*</span></p>
+                                                                        <input  type="text" name="ctl00$PageContent$OnePageCheckout1$ShippingAddressEditView$ShipLastName" value="123436546576876897">
+                                                                    </label>
+                                                                    <label>
+                                                                        <p>Company:</p>
+                                                                        <input type="text" maxlength="99" name="ctl00$PageContent$OnePageCheckout1$ShippingAddressEditView$Company" value="bmz">
+                                                                    </label>
+                                                                    <label>
+                                                                        <p>Address 1:<span style="color: red">*</span></p>
+                                                                        <input  type="text" maxlength="99" name="ctl00$PageContent$OnePageCheckout1$ShippingAddressEditView$ShipAddress1" value="koribskogo d16 kv84">
+                                                                    </label>
+                                                                    <label>
+                                                                        <p>Address 2:</p>
+                                                                        <input  type="text" maxlength="99" name="ctl00$PageContent$OnePageCheckout1$ShippingAddressEditView$ShipAddress1" value="mkr16 d8 kv84">
+                                                                    </label>
+                                                                    <label>
+                                                                        <p class="zip_Postal">Zip/Postal Code:<span style="color: red">*</span></p>
+                                                                        <input class="zip" type="text" maxlength="10" name="ctl00$PageContent$OnePageCheckout1$ShippingAddressEditView$ShipZip" value="12345">
+                                                                    </label>
+                                                                    <label>
+                                                                        <p>City:<span style="color: red">*</span></p>
+                                                                        <input  class="city" type="text" maxlength="99" value="Schenectady" name="ctl00$PageContent$OnePageCheckout1$ShippingAddressEditView$ShipOtherCity" value="zlobin">
+                                                                    </label>
+                                                                    <label>
+                                                                        <p> Country:<span style="color: red">*</span></p>
+                                                                        <select name="ctl00$PageContent$OnePageCheckout1$ShippingAddressEditView$ShipOtherCountry">
+                                                                            <option value="United States" selected="selected">United States</option>
+                                                                        </select>
+                                                                    </label>
+                                                                    <label>
+                                                                        <p>State:<span style="color: red">*</span></p>
+                                                                        <select  class="state" name="ctl00$PageContent$OnePageCheckout1$ShippingAddressEditView$ShipOtherState">
+                                                                            <option value="AL">Alabama</option>
+                                                                            <option value="AK">Alaska</option>
+                                                                            <option value="AS">American Samoa</option>
+                                                                            <option value="AZ">Arizona</option>
+                                                                            <option value="AR">Arkansas</option>
+                                                                            <option value="CA">California</option>
+                                                                            <option value="CO">Colorado</option>
+                                                                            <option value="CT">Connecticut</option>
+                                                                            <option value="DE">Delaware</option>
+                                                                            <option value="DC">District of Columbia</option>
+                                                                            <option value="FM">Federated States of Micronesia</option>
+                                                                            <option value="FL">Florida</option>
+                                                                            <option value="GA">Georgia</option>
+                                                                            <option value="GU">Guam</option>
+                                                                            <option value="HI">Hawaii</option>
+                                                                            <option value="ID">Idaho</option>
+                                                                            <option value="IL">Illinois</option>
+                                                                            <option value="IN">Indiana</option>
+                                                                            <option value="IA">Iowa</option>
+                                                                            <option value="KS">Kansas</option>
+                                                                            <option value="KY">Kentucky</option>
+                                                                            <option value="LA">Louisiana</option>
+                                                                            <option value="ME">Maine</option>
+                                                                            <option value="MH">Marshall Islands</option>
+                                                                            <option value="MD">Maryland</option>
+                                                                            <option value="MA">Massachusetts</option>
+                                                                            <option value="MI">Michigan</option>
+                                                                            <option value="MN">Minnesota</option>
+                                                                            <option value="MS">Mississippi</option>
+                                                                            <option value="MO">Missouri</option>
+                                                                            <option value="MT">Montana</option>
+                                                                            <option value="NE">Nebraska</option>
+                                                                            <option value="NV">Nevada</option>
+                                                                            <option value="NH">New Hampshire</option>
+                                                                            <option value="NJ">New Jersey</option>
+                                                                            <option value="NM">New Mexico</option>
+                                                                            <option value="NY" selected="selected">New York</option>
+                                                                            <option value="NC">North Carolina</option>
+                                                                            <option value="ND">North Dakota</option>
+                                                                            <option value="MP">Northern Mariana Islands</option>
+                                                                            <option value="OH">Ohio</option>
+                                                                            <option value="OK">Oklahoma</option>
+                                                                            <option value="OR">Oregon</option>
+                                                                            <option value="PW">Palau</option>
+                                                                            <option value="PA">Pennsylvania</option>
+                                                                            <option value="PR">Puerto Rico</option>
+                                                                            <option value="RI">Rhode Island</option>
+                                                                            <option value="SC">South Carolina</option>
+                                                                            <option value="SD">South Dakota</option>
+                                                                            <option value="TN">Tennessee</option>
+                                                                            <option value="TX">Texas</option>
+                                                                            <option value="UT">Utah</option>
+                                                                            <option value="VT">Vermont</option>
+                                                                            <option value="VI">Virgin Islands</option>
+                                                                            <option value="VA">Virginia</option>
+                                                                            <option value="WA">Washington</option>
+                                                                            <option value="WV">West Virginia</option>
+                                                                            <option value="WI">Wisconsin</option>
+                                                                            <option value="WY">Wyoming</option>
+                                                                        </select> 
+                                                                    </label>        
+                                                                </form>
+                                                            </div>
+                                                            <div class="PanelCreditCard">
+                                                                <form name="form3">
+                                                                    <div class="paymentForm">
+                                                                        <p> Name on Card:</p>
+                                                                        <input class="CCWideTextBox CCNameOnCard" type="text" maxlength="100" value="" name="ctl00$PageContent$OnePageCheckout1$PaymentView$CreditCardPaymentViewForm$CreditCardPaymentForm1$CCNameOnCard">
+                                                                    </div>
+                                                                    <div class="paymentForm">
+                                                                        <p>Credit Card Number:</p>
+                                                                        <input  class="CCWideTextBox" type="text" autocomplete="off" maxlength="16"
+                                                                               value="" 
+                                                                               name="ctl00$PageContent$OnePageCheckout1$PaymentView$CreditCardPaymentViewForm$CreditCardPaymentForm1$CCNumber">
+                                                                        <div class="CreditCardIconsWrap">
+                                                                            <img src="images/checkout/VisaIcon.gif" alt="Visa">
+                                                                            <img src="images/checkout/MasterCardIcon.gif" alt="MasterCard">
+                                                                            <img src="images/checkout/AmexIcon.gif" alt="Amex">
+                                                                            <img src="images/checkout/DiscoverIcon.gif" alt="Discover">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="paymentForm">
+                                                                        <p>Expires:</p>
+                                                                        <select  class="month_select" name="ctl00$PageContent$OnePageCheckout1$PaymentView$CreditCardPaymentViewForm$CreditCardPaymentForm1$CCExpiresMonth">
+                                                                            <option value="01" selected="selected">01</option>
+                                                                            <option value="02">02</option>
+                                                                            <option value="03">03</option>
+                                                                            <option value="04">04</option>
+                                                                            <option value="05">05</option>
+                                                                            <option value="06">06</option>
+                                                                            <option value="07">07</option>
+                                                                            <option value="08">08</option>
+                                                                            <option value="09">09</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                        </select>
+                                                                        <select class="year_select" name="ctl00$PageContent$OnePageCheckout1$PaymentView$CreditCardPaymentViewForm$CreditCardPaymentForm1$CCExpiresYear">
+                                                                            <option value="2015" selected="selected">2015</option>
+                                                                            <option value="2016">2016</option>
+                                                                            <option value="2017">2017</option>
+                                                                            <option value="2018">2018</option>
+                                                                            <option value="2019">2019</option>
+                                                                            <option value="2020">2020</option>
+                                                                            <option value="2021">2021</option>
+                                                                            <option value="2022">2022</option>
+                                                                            <option value="2023">2023</option>
+                                                                            <option value="2024">2024</option>
+                                                                            <option value="2025">2025</option>
+                                                                        </select>
+
+                                                                    </div>
+                                                                    <div class="paymentForm">
+                                                                        <p>Security Code:</p>
+                                                                        <input class="security_code"  type="text" autocomplete="off" maxlength="4" name="ctl00$PageContent$OnePageCheckout1$PaymentView$CreditCardPaymentViewForm$CreditCardPaymentForm1$CCSecurityCode">
+                                                                    </div>
+                                                                    <div class="paymentForm">
+                                                                        <p>Save to your wallet?</p>
+                                                                        <input class="wallet" type="checkbox" name="ctl00$PageContent$OnePageCheckout1$PaymentView$CreditCardPaymentViewForm$CreditCardPaymentForm1$CBSaveToAccount">
+                                                                    </div>
+                                                                </form>
+                                                                <input class="OPButton " type="submit" value="Next" name="ctl00$PageContent$OnePageCheckout1$PaymentView$CreditCardPaymentViewForm$CreditCardPaymentForm1$ButtonSaveCreditCardPaymentForm">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="PaymentMethod">
+                                                    <input  id="RadioPayPalExpress" type="radio"  value="RadioPayPalExpress" name="ctl00$PageContent$OnePageCheckout1$PaymentView$PaymentMethod">
+                                                    <label for="RadioPayPalExpress">PayPal Express</label>
+                                                    <img alt="Paypal" src="images/checkout/PaypalIcon.gif">
+                                                    <p class="checkoutBlock" style="display:none;"> To complete your payment, click Place Order below. </p>  
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!--  --------------- Create An Account-------------- -->
+
+                                        <div class="checkoutBlock">
+                                            <div class="create_an_account">
+                                                <div class="checkoutHeader">
+                                                    <p>
+                                                        Create An Account
+                                                    </p>
+                                                </div>
+                                                <div class="subSection">
+                                                    <form name="form4">
+                                                        <div class="paymentForm">
+                                                            <label>
+                                                                <p>Create Password:</p>
+                                                                <input type="password" name="ctl00$PageContent$OnePageCheckout1$CreateAccountView$CreateAccountPassword">
+                                                            </label>
+                                                            <span class="Requirements">5 characters or more</span>
+                                                        </div>
+                                                        <div class="paymentForm">
+                                                            <label>
+                                                                <p>Confirm Password:</p>
+                                                                <input  type="password" name="ctl00$PageContent$OnePageCheckout1$CreateAccountView$CreateAccountPasswordConfirm">
+                                                            </label>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>    
+                                        </div>
+
+                                        <!--  -----------------Complete Your Order----------- -->
+
+                                        <div class="checkoutBlock">
+                                            <div class="complete_your_order">
+                                                <div class="checkoutHeader">
+                                                    <p>
+                                                        Complete Your Order
+                                                    </p>
+                                                </div>
+                                                <div class="subSection">
+                                                    <div class="PanelChooseAffiliate">
+                                                        <p>
+                                                            Have you been referred? (optional)
+                                                            <span class="referred">
+                                                                <input id="refferedNo" type="radio" checked="checked" value="refferedNo" name="ctl00$PageContent$OnePageCheckout1$ChooseAffiliate$Reffered">
+                                                                <label for="refferedNo">No</label>
+                                                                <input id="refferedYes" type="radio" value="refferedYes" name="ctl00$PageContent$OnePageCheckout1$ChooseAffiliate$Reffered">
+                                                                <label for="refferedYes">Yes</label>
+                                                            </span>
+                                                        </p>
+                                                    </div>
+                                                    <div  class="affiliate-panel">
+                                                        <select name="ctl00$PageContent$OnePageCheckout1$ChooseAffiliate$ddlAffiliate">
+                                                            <option value="0" selected="selected">None</option>
+                                                            <option value="10061">Abel Perez</option>
+                                                            <option value="10071">Brad Ralls</option>
+                                                            <option value="10091">Carol Ann Turney</option>
+                                                            <option value="10087">Carolyn </option>
+                                                            <option value="10080">Catherine Thomas</option>
+                                                            <option value="10067">Chris Cookman</option>
+                                                            <option value="10056">Clay Dalton</option>
+                                                            <option value="10070">Denise Jeffery</option>
+                                                            <option value="10082">Dianna Smith</option>
+                                                            <option value="10084">Gary Lane</option>
+                                                            <option value="10094">Harpreet & Libby</option>
+                                                            <option value="10064">Heather Myers</option>
+                                                            <option value="10083">Jason Grosz</option>
+                                                            <option value="10079">Jo Stanfill</option>
+                                                            <option value="10086">Joe Keeton</option>
+                                                            <option value="10072">Joe Reynolds</option>
+                                                            <option value="10077">Joyce Stockton</option>
+                                                            <option value="10066">Justin & Donna Foster</option>
+                                                            <option value="10078">Kim Foster</option>
+                                                            <option value="10092">Kinsey Morris</option>
+                                                            <option value="10090">Kris Wilson</option>
+                                                            <option value="10068">My Supply Depot</option>
+                                                            <option value="10076">Nancy Castillo</option>
+                                                            <option value="10089">Nashville </option>
+                                                            <option value="10074">OfficeZilla Local</option>
+                                                            <option value="10093">OZJAX Warehouse</option>
+                                                            <option value="10058">Robert Barnett</option>
+                                                            <option value="10057">Robyn / Philip Meyer</option>
+                                                            <option value="10055">Sarah Carpenter</option>
+                                                            <option value="10063">Sean McCall</option>
+                                                            <option value="10088">Service Fort</option>
+                                                            <option value="10081">Tera Brogan</option>
+                                                            <option value="10075">Teresa Vernon</option>
+                                                            <option value="10069">The Visser Team</option>
+                                                            <option value="10065">Tony Berry</option>
+                                                            <option value="10085">Zip Zatz</option>
+                                                        </select>
+                                                    </div>
+                                                    <input type="submit"  value="Place Order" name="ctl00$PageContent$OnePageCheckout1$SubmitOrder">
+                                                    <a class="icon-doc-text" href="#PreviewOrderAddressModal">Preview Order</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="shopping">
+                                    <div class="OPC_CustomerServiceWrap">
+                                        <div class="checkoutHeader">
+                                            <p>
+                                                Customer Service
+                                            </p>
+                                        </div>
+                                        <div class="CustomerServiceDetails">
+                                            <div class="customerServiceLeft">
+                                                <a target="_blank" href="t-shipping.aspx">Shipping Info</a>
+
+                                                <a target="_blank" href="t-returns.aspx">Return Policy</a>
+
+                                                <a target="_blank" href="t-contact.aspx">Contact Us</a>
+                                            </div>
+                                            <div class="customerServiceRight">
+                                                <span>Call Us At:</span>
+                                                <br>
+                                                <span>1-800-699-7549</span>
+                                            </div>
+                                            <div style="clear:both"></div>
+                                        </div>
+                                    </div>
+                                    <div class="OPC_MiniCartWrap">
+                                        <div class="checkoutHeader">
+                                            <p>
+                                                Shopping Cart 
+                                            </p>
+                                        </div>
+                                        <div  class="miniCartItemRow">
+                                            <div class="cartItemImageWrap">
+                                                <img src="https://content.oppictures.com/Master_Images/Master_Variants/Variant_65/45167.jpg" alt="#">
+                                            </div>
+                                            <div class="cartItemDetailsWrap">
+                                                <div class="cartItemName">
+                                                    <span>HP Lithium Battery for DeskJet 450/460</span>
+                                                </div>
+                                                <div class="cartItemNumber">
+                                                    <span>SKU:</span>
+                                                    <span>HEWC8263A</span>
+                                                </div>
+                                                <div class="cartItemPrice">
+                                                    <span style="display:none;">Price:</span>
+                                                    <span>$87.99</span>
+                                                </div>
+                                            </div>
+                                            <div class="cartItemQuantityWrap">
+                                                <span>Quantity:</span>
+                                                <input  type="text" data-quantity="1" size="2" maxlength="4" value="1" name="ctl00$PageContent$OnePageCheckout1$MiniCartView$RepeaterCartItems$ctl00$CartItemQuantityValue">
+                                                <input class="ButtonCartItemUpdate" type="submit" value="Update" name="ctl00$PageContent$OnePageCheckout1$MiniCartView$RepeaterCartItems$ctl00$ButtonCartItemUpdate">
+                                            </div>
+                                            <div class="cartItemRemoveWrap">
+                                                <input  class="ButtonCartItemRemove" type="submit" title="Remove Item" value="" name="ctl00$PageContent$OnePageCheckout1$MiniCartView$RepeaterCartItems$ctl00$ButtonCartItemRemove">
+                                            </div>    
+                                            <div style="clear:both"></div>
+
+                                        </div>
+                                        <div  class="MiniCartSummary">
+                                            <div><span>Subtotal</span><span>06.81</span></div>
+                                            <div><span>Shipping:</span><span>FREE</span></div>
+                                            <div><span>Tax:</span><span>$0.00</span></div>
+                                            <div class="miniCartSummaryLabel"><span>Order Total:</span><span>$106.81</span></div>
+                                            <div style="clear:both"></div>
+                                        </div>
+                                    </div>
+                                    <div class="OPC_ContinueShoppingWrap">
+                                        <span>Forgot Something?</span>
+                                        <br>
+                                        <a class="OPContinueShoppingButton" href="./">Continue Shopping</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!--  -----------------------modal--------------------------- -->
+
+                    <div class="remodal-bg">
+                        <div class="remodal" data-remodal-id="modal"  data-remodal-options="closeOnOutsideClick: false">
+                            <h3 class="icon-book">
+                                Address Book
+                                <span data-remodal-action="cancel" class="remodal-cancel cancel_right">x</span>
+                                <span class="new_Address">
+                                    <a class="icon-plus link-like" href="#NewShippingAddressModal" >New Address</a>
+                                    <button class="icon-arrows-cw link-like">Refresh</button>
+                                </span>
+
+                            </h3>
+                            <div class="content_modal">
+                                <form  method="post" name="ctl00">
+                                    <div>
+                                        <input id="__VIEWSTATE" type="hidden" value="IzNaLIJ8yRZfG3ZLLT7Mgxkd+X6UwRr1Z4ejqyURdZ+kzMlcXBOKtWUmPr0pzMrsM9ohJU0UH3EoZsgzo94TSVf/0yUGx0XCwD+OG+2WXGmbr4sEe6xwNe0uTXHZJweA0K9ecDWvGpmmhJiio3YkpWjLyDt8WfIVH2bWuEipAK2Kxd2RbihFftLJRX53eIc0nI6W7Ew2E/TwiixSL9i0aYYDuswr2TAOyrFBrcbDLVSiQmt8lsPWcD30MXygrQjXmTZv9dqBDcgNzk2DeYOD/DWLknpmpau5KU0oVd/JF8prSQcO6lCYvdyL1C8Jk0JnbNCm7Pnrg8AMajVP/vqnyuX5gQZYSsD43O4IRAP+ohp/z99c5iDLjN22c3Vao76qpdBRNlFQtpmjRufB/zhddm/i+F5aCIUpNeLNDdlBNeeCvFzkaNCs/wanVYmgV5Y1jRcuT62FV6cSe/ZCro3KwQ64OrQ08KEnTqdQPVZtTPx9kWQ39E9p6GQKCx4csB8B4xHpCzQirJ65TwWqULDOepg6Kxg/N12ef028RN9Ja+izjSde76pruWBsjxZmmWTj7WdND2klqPt1ObJbxoElfBhSHElXF8t229cm/arBX7Fxoz2gDP9qkB0MkV6z/zJRrqdaPgKczI3Fj6OOOPe8GVEACb14+mFdURBz2IxJekj49c7prvbOW5FQgrp55KONvZP4P6kf0T701lDwOdoVBejfx3cGP6Nf8cBiD9Iacq/psnXnRrNuq3DTPVe8JXv3TVf30fvWaygxRB1c67LArN9croSikTWTFTgqZgwf92WUFcmDwFpInfu4e7FUZ+Orc6lnl6cec/zbweZPK/YaqqtFsKLU7p4sS/btNf8fS63uX8xt" name="__VIEWSTATE">
+                                    </div>
+                                    <div>
+                                        <input id="__VIEWSTATEGENERATOR" type="hidden" value="A23EFCF6" name="__VIEWSTATEGENERATOR">
+                                        <input id="__VIEWSTATEENCRYPTED" type="hidden" value="" name="__VIEWSTATEENCRYPTED">
+                                        <input id="__EVENTVALIDATION" type="hidden" value="/F1wPOLwHYhnZGGyP8QJLwvZ6WCq0y5OyRqIub99PhVQiJWE08AiFpTO+LXFJCNxdCl5aq5ESVJnm4Yyuuyry+IHoAUT0ZUpvqLDSlxcKy8QT9wKjTN1j6E6kWxIefHh6vnNKUW1ot18PoYyXDh7bT2jH/jLsY5Q0oY3vf2XuMKch/B68YpXJl9bqZwQKnDRoKabVw==" name="__EVENTVALIDATION">
+                                    </div>
+                                    <div class="address-book-container">
+                                        <div class="filters">
+                                            <span class="icon-truck litType"></span>
+                                            <input class="filterTextBox" type="text" name="tbFilterTextBox">
+                                            <select  class="state" name="ddlStates">
+                                                <option value="All">All</option>
+                                                <option value="NY">NY</option>
+                                            </select>
+                                            <select  class="city" name="ddlCities">
+                                                <option value="All">All</option>
+                                                <option value="Schenectady">Schenectady</option>
+                                            </select>
+                                        </div>
+                                        <div class="address-list"> 
+                                            <div class="addressBookItem">
+                                                <div class="subSection">
+                                                    <div class="shipAddressWrap">
+                                                        <div>
+                                                            <span class="ShippingAddress_FirstName">ovsyanikov</span>
+                                                            <span class="ShippingAddress_LastName">vitalya</span>
+                                                        </div>
+                                                        <div>
+                                                            <span class="ShippingAddress_Phone">132343546567</span>
+                                                        </div>
+                                                        <div>
+                                                            <span class="ShippingAddress_Address1">karibskogo d16 rd84</span>
+                                                        </div>
+
+                                                        <div>
+                                                            <span class="ShippingAddress_Address2">mkr16 d8 kv411</span>
+                                                        </div>
+                                                        <div>
+                                                            <span class="ShippingAddress_City">Schenectady</span>
+                                                            <span class="ShippingAddress_State">NY</span>
+                                                            <span class="ShippingAddress_Zip">12345</span>
+                                                        </div>
+                                                        <div>
+                                                            <span class="ShippingAddress_Country">United States</span>
+                                                        </div>
+                                                    </div> 
+                                                </div>
+                                                <div class="address_new">
+                                                    <span class="selected">Selected</span>
+                                                    <a href="#EditShippingAddressModal_modal" class="icon-pencil link-like">Edit</a>
+                                                </div>
+                                                <div style="clear:both"></div>
+                                            </div>
+                                        </div>
+                                        <div class="address-book-container-decor"></div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal_footer">
+                                <a  data-remodal-action="cancel" class="remodal-cancel" href="#">Close</a>
+                                <a  class="side-action" target="_blank" href="account.aspx#addressbook">Manage Address Book &gt;</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--  --------------------NewShippingAddressModal------------------- -->
+
+                    <div class="remodal-bg" >
+                        <div class="remodal addressModal" data-remodal-id="NewShippingAddressModal"  data-remodal-options="closeOnOutsideClick: false">
+                            <h3  class="icon-truck">New Shipping Address
+                                <a href="#modal" class="cancel_right">x</a>  
+                            </h3>
+                            <div class="content_modal">
+                                <form name="form1">
+                                    <label>
+                                        <p>
+                                            Nickname:
+                                        </p>
+                                        <input type="text" name="ctl00$PageContent$OnePageCheckout1$ShippingAddressEditView$ShipFirstName" maxlength="49">
+                                    </label>
+                                    <label>
+                                        <p>
+                                            First Name:
+                                            <span style="color: red">*</span>
+                                        </p>
+                                        <input type="text" name="ctl00$PageContent$OnePageCheckout1$ShippingAddressEditView$ShipFirstName" maxlength="49">
+                                    </label>
+                                    <label>
+                                        <p>
+                                            Last Name:
+                                            <span style="color: red">*</span>
+                                        </p>
+                                        <input type="text" name="ctl00$PageContent$OnePageCheckout1$ShippingAddressEditView$ShipLastName" maxlength="49">
+                                    </label>
+                                    <label>
+                                        <p>
+                                            Phone:
+                                            <span style="color: red">*</span>
+                                        </p>
+                                        <input type="text" name="ctl00$PageContent$OnePageCheckout1$ShippingAddressEditView$ShipLastName">
+                                    </label>
+                                    <label>
+                                        <p>Company:</p>
+                                        <input type="text" name="ctl00$PageContent$OnePageCheckout1$ShippingAddressEditView$Company" maxlength="99">
+                                    </label>
+                                    <label>
+                                        <p>
+                                            Address 1:
+                                            <span style="color: red">*</span>
+                                        </p>
+                                        <input type="text" name="ctl00$PageContent$OnePageCheckout1$ShippingAddressEditView$ShipAddress1" maxlength="99">
+                                    </label>
+                                    <label>
+                                        <p>Address 2:</p>
+                                        <input type="text" name="ctl00$PageContent$OnePageCheckout1$ShippingAddressEditView$ShipAddress1" maxlength="99">
+                                    </label>
+                                    <label>
+                                        <p class="zip_Postal">
+                                            Zip/Postal Code:
+                                            <span style="color: red">*</span>
+                                        </p>
+                                        <input class="zip" type="text" name="ctl00$PageContent$OnePageCheckout1$ShippingAddressEditView$ShipZip" maxlength="10">
+                                    </label>
+                                    <label>
+                                        <p>
+                                            City
+                                            <span style="color: red">*</span>
+                                        </p>
+                                        <input class="city" type="text" name="ctl00$PageContent$OnePageCheckout1$ShippingAddressEditView$ShipOtherCity" maxlength="99">
+                                    </label>
+                                    <label>
+                                        <p>
+                                            Country:
+                                        </p>
+                                        <select name="ctl00$PageContent$OnePageCheckout1$ShippingAddressEditView$ShipOtherCountry">
+                                            <option selected="selected" value="United States">United States</option>
+                                        </select>
+                                    </label>
+                                    <label>
+                                        <p>
+                                            State:
+                                            <span style="color: red">*</span>
+                                        </p>
+                                        <select class="state" name="ctl00$PageContent$OnePageCheckout1$ShippingAddressEditView$ShipOtherState" maxlength="99">
+                                            <option value="AL">Alabama</option>
+                                            <option value="AK">Alaska</option>
+                                            <option value="AS">American Samoa</option>
+                                            <option value="AZ">Arizona</option>
+                                            <option value="AR">Arkansas</option>
+                                            <option value="CA">California</option>
+                                            <option value="CO">Colorado</option>
+                                            <option value="CT">Connecticut</option>
+                                            <option value="DE">Delaware</option>
+                                            <option value="DC">District of Columbia</option>
+                                            <option value="FM">Federated States of Micronesia</option>
+                                            <option value="FL">Florida</option>
+                                            <option value="GA">Georgia</option>
+                                            <option value="GU">Guam</option>
+                                            <option value="HI">Hawaii</option>
+                                            <option value="ID">Idaho</option>
+                                            <option value="IL">Illinois</option>
+                                            <option value="IN">Indiana</option>
+                                            <option value="IA">Iowa</option>
+                                            <option value="KS">Kansas</option>
+                                            <option value="KY">Kentucky</option>
+                                            <option value="LA">Louisiana</option>
+                                            <option value="ME">Maine</option>
+                                            <option value="MH">Marshall Islands</option>
+                                            <option value="MD">Maryland</option>
+                                            <option value="MA">Massachusetts</option>
+                                            <option value="MI">Michigan</option>
+                                            <option value="MN">Minnesota</option>
+                                            <option value="MS">Mississippi</option>
+                                            <option value="MO">Missouri</option>
+                                            <option value="MT">Montana</option>
+                                            <option value="NE">Nebraska</option>
+                                            <option value="NV">Nevada</option>
+                                            <option value="NH">New Hampshire</option>
+                                            <option value="NJ">New Jersey</option>
+                                            <option value="NM">New Mexico</option>
+                                            <option selected="selected" value="NY">New York</option>
+                                            <option value="NC">North Carolina</option>
+                                            <option value="ND">North Dakota</option>
+                                            <option value="MP">Northern Mariana Islands</option>
+                                            <option value="OH">Ohio</option>
+                                            <option value="OK">Oklahoma</option>
+                                            <option value="OR">Oregon</option>
+                                            <option value="PW">Palau</option>
+                                            <option value="PA">Pennsylvania</option>
+                                            <option value="PR">Puerto Rico</option>
+                                            <option value="RI">Rhode Island</option>
+                                            <option value="SC">South Carolina</option>
+                                            <option value="SD">South Dakota</option>
+                                            <option value="TN">Tennessee</option>
+                                            <option value="TX">Texas</option>
+                                            <option value="UT">Utah</option>
+                                            <option value="VT">Vermont</option>
+                                            <option value="VI">Virgin Islands</option>
+                                            <option value="VA">Virginia</option>
+                                            <option value="WA">Washington</option>
+                                            <option value="WV">West Virginia</option>
+                                            <option value="WI">Wisconsin</option>
+                                            <option value="WY">Wyoming</option>
+                                        </select>
+                                    </label>
+                                </form>
+                                <label>                               
+                                    <input type="checkbox"  name="ctl00$PageContent$ctrlAddress$CustomerPrimary">
+                                    <p class="addressPrimary">Your primary shipping address</p>
+                                </label> 
+                            </div>
+                            <div class="footer_addressModal">
+                                <button class="default-button">Save</button>
+                                <a href="#modal">Cancel</a>
+                            </div>      
+                        </div>
+                    </div>
+
+                    <!-- ------------------------EditShippingAddressModal_modal------------------------- -->
+
+                    <div class="remodal-bg" >
+                        <div class="remodal addressModal" data-remodal-id="EditShippingAddressModal_modal"  data-remodal-options="closeOnOutsideClick: false">
+                            <h3  class="icon-truck">New Shipping Address
+                                <a href="#modal" class="cancel_right">x</a> 
+                            </h3>
+                            <div class="content_modal">
+                                <form name="form1">
+                                    <label>
+                                        <p>Nickname:</p>
+                                        <input type="text" name="ctl00$PageContent$OnePageCheckout1$ShippingAddressEditView$ShipFirstName" maxlength="49">
+                                    </label>
+                                    <label>
+                                        <p>First Name:<span style="color: red">*</span></p>
+                                        <input type="text" name="ctl00$PageContent$OnePageCheckout1$ShippingAddressEditView$ShipFirstName" maxlength="49" value="vitalya">
+                                    </label>
+                                    <label>
+                                        <p>
+                                            Last Name:<span style="color: red">*</span></p>
+                                        <input type="text" name="ctl00$PageContent$OnePageCheckout1$ShippingAddressEditView$ShipLastName" maxlength="49"  value="ovsyanikov">
+                                    </label>
+                                    <label>
+                                        <p>Phone:<span style="color: red">*</span></p>
+                                        <input type="text" name="ctl00$PageContent$OnePageCheckout1$ShippingAddressEditView$ShipLastName" value="763423564235473264" >
+                                    </label>
+                                    <label>
+                                        <p>Company:</p>
+                                        <input type="text" name="ctl00$PageContent$OnePageCheckout1$ShippingAddressEditView$Company" maxlength="99" value="bmz">
+                                    </label>
+                                    <label>
+                                        <p>Address 1:<span style="color: red">*</span></p>
+                                        <input type="text" name="ctl00$PageContent$OnePageCheckout1$ShippingAddressEditView$ShipAddress1" maxlength="99" value="karibskogo d16 kv84">
+                                    </label>
+                                    <label>
+                                        <p>Address 2:</p>
+                                        <input type="text" name="ctl00$PageContent$OnePageCheckout1$ShippingAddressEditView$ShipAddress1" maxlength="99" value="mkr16 d8 kv411">
+                                    </label>
+                                    <label>
+                                        <p class="zip_Postal">Zip/Postal Code:<span style="color: red">*</span></p>
+                                        <input class="zip" type="text" name="ctl00$PageContent$OnePageCheckout1$ShippingAddressEditView$ShipZip" maxlength="10" value="12345">
+                                    </label>
+                                    <label>
+                                        <p>
+                                            City<span style="color: red">*</span></p>
+                                        <input class="city" type="text" name="ctl00$PageContent$OnePageCheckout1$ShippingAddressEditView$ShipOtherCity" maxlength="99" value="vitalya">
+                                    </label>
+                                    <label>
+                                        <p>Country:</p>
+                                        <select name="ctl00$PageContent$OnePageCheckout1$ShippingAddressEditView$ShipOtherCountry">
+                                            <option selected="selected" value="United States">United States</option>
+                                        </select>
+                                    </label>
+                                    <label>
+                                        <p>State:<span style="color: red">*</span></p>
+                                        <select class="state" name="ctl00$PageContent$OnePageCheckout1$ShippingAddressEditView$ShipOtherState">
+                                            <option value="AL">Alabama</option>
+                                            <option value="AK">Alaska</option>
+                                            <option value="AS">American Samoa</option>
+                                            <option value="AZ">Arizona</option>
+                                            <option value="AR">Arkansas</option>
+                                            <option value="CA">California</option>
+                                            <option value="CO">Colorado</option>
+                                            <option value="CT">Connecticut</option>
+                                            <option value="DE">Delaware</option>
+                                            <option value="DC">District of Columbia</option>
+                                            <option value="FM">Federated States of Micronesia</option>
+                                            <option value="FL">Florida</option>
+                                            <option value="GA">Georgia</option>
+                                            <option value="GU">Guam</option>
+                                            <option value="HI">Hawaii</option>
+                                            <option value="ID">Idaho</option>
+                                            <option value="IL">Illinois</option>
+                                            <option value="IN">Indiana</option>
+                                            <option value="IA">Iowa</option>
+                                            <option value="KS">Kansas</option>
+                                            <option value="KY">Kentucky</option>
+                                            <option value="LA">Louisiana</option>
+                                            <option value="ME">Maine</option>
+                                            <option value="MH">Marshall Islands</option>
+                                            <option value="MD">Maryland</option>
+                                            <option value="MA">Massachusetts</option>
+                                            <option value="MI">Michigan</option>
+                                            <option value="MN">Minnesota</option>
+                                            <option value="MS">Mississippi</option>
+                                            <option value="MO">Missouri</option>
+                                            <option value="MT">Montana</option>
+                                            <option value="NE">Nebraska</option>
+                                            <option value="NV">Nevada</option>
+                                            <option value="NH">New Hampshire</option>
+                                            <option value="NJ">New Jersey</option>
+                                            <option value="NM">New Mexico</option>
+                                            <option selected="selected" value="NY">New York</option>
+                                            <option value="NC">North Carolina</option>
+                                            <option value="ND">North Dakota</option>
+                                            <option value="MP">Northern Mariana Islands</option>
+                                            <option value="OH">Ohio</option>
+                                            <option value="OK">Oklahoma</option>
+                                            <option value="OR">Oregon</option>
+                                            <option value="PW">Palau</option>
+                                            <option value="PA">Pennsylvania</option>
+                                            <option value="PR">Puerto Rico</option>
+                                            <option value="RI">Rhode Island</option>
+                                            <option value="SC">South Carolina</option>
+                                            <option value="SD">South Dakota</option>
+                                            <option value="TN">Tennessee</option>
+                                            <option value="TX">Texas</option>
+                                            <option value="UT">Utah</option>
+                                            <option value="VT">Vermont</option>
+                                            <option value="VI">Virgin Islands</option>
+                                            <option value="VA">Virginia</option>
+                                            <option value="WA">Washington</option>
+                                            <option value="WV">West Virginia</option>
+                                            <option value="WI">Wisconsin</option>
+                                            <option value="WY">Wyoming</option>
+                                        </select>
+                                    </label>
+                                    <label>
+                                        <p>AddressType:</p>
+                                        <select  disabled="disabled" name="ctl00$PageContent$ctrlAddress$AddressType">
+                                            <option value="0">Billing address</option>
+                                            <option value="1" selected="selected">Shipping address</option>
+                                        </select>
+                                    </label>
+                                </form>
+                                <label>                               
+                                    <input type="checkbox"  name="ctl00$PageContent$ctrlAddress$CustomerPrimary">
+                                    <p class="addressPrimary">Your primary shipping address</p>
+                                </label> 
+                            </div>
+                            <div class="footer_addressModal">
+                                <button class="default-button">Save</button>
+                                <a href="#modal">Cancel</a>
+                            </div>      
+                        </div>
+                    </div>
+                    <!--  -----------------EditShippingAddressModa------------- -->
+
+                    <div class="remodal-bg" >
+                        <div class="remodal addressModal" data-remodal-id="EditShippingAddressModal"  data-remodal-options="closeOnOutsideClick: false">
+                            <h3  class="icon-truck">New Shipping Address
+                                <span data-remodal-action="cancel" class="remodal-cancel cancel_right">x</span> 
+                            </h3>
+                            <div class="content_modal">
+                                <form name="form1">
+                                    <label>
+                                        <p>Nickname:</p>
+                                        <input type="text" name="ctl00$PageContent$OnePageCheckout1$ShippingAddressEditView$ShipFirstName" maxlength="49">
+                                    </label>
+                                    <label>
+                                        <p>First Name:<span style="color: red">*</span></p>
+                                        <input type="text" name="ctl00$PageContent$OnePageCheckout1$ShippingAddressEditView$ShipFirstName" maxlength="49" value="vitalya">
+                                    </label>
+                                    <label>
+                                        <p>
+                                            Last Name:<span style="color: red">*</span></p>
+                                        <input type="text" name="ctl00$PageContent$OnePageCheckout1$ShippingAddressEditView$ShipLastName" maxlength="49"  value="ovsyanikov">
+                                    </label>
+                                    <label>
+                                        <p>Phone:<span style="color: red">*</span></p>
+                                        <input id="ctl00_PageContent_OnePageCheckout1_ShippingAddressEditView_ShipLastName" type="text" name="ctl00$PageContent$OnePageCheckout1$ShippingAddressEditView$ShipLastName" value="763423564235473264" >
+                                    </label>
+                                    <label>
+                                        <p>Company:</p>
+                                        <input type="text" name="ctl00$PageContent$OnePageCheckout1$ShippingAddressEditView$Company" maxlength="99" value="bmz">
+                                    </label>
+                                    <label>
+                                        <p>Address 1:<span style="color: red">*</span></p>
+                                        <input type="text" name="ctl00$PageContent$OnePageCheckout1$ShippingAddressEditView$ShipAddress1" maxlength="99" value="karibskogo d16 kv84">
+                                    </label>
+                                    <label>
+                                        <p>Address 2:</p>
+                                        <input type="text" name="ctl00$PageContent$OnePageCheckout1$ShippingAddressEditView$ShipAddress1" maxlength="99" value="mkr16 d8 kv411">
+                                    </label>
+                                    <label>
+                                        <p class="zip_Postal">Zip/Postal Code:<span style="color: red">*</span></p>
+                                        <input class="zip" type="text" name="ctl00$PageContent$OnePageCheckout1$ShippingAddressEditView$ShipZip" maxlength="10" value="12345">
+                                    </label>
+                                    <label>
+                                        <p>
+                                            City<span style="color: red">*</span></p>
+                                        <input class="city" type="text" name="ctl00$PageContent$OnePageCheckout1$ShippingAddressEditView$ShipOtherCity" maxlength="99" value="vitalya">
+                                    </label>
+                                    <label>
+                                        <p>Country:</p>
+                                        <select name="ctl00$PageContent$OnePageCheckout1$ShippingAddressEditView$ShipOtherCountry">
+                                            <option selected="selected" value="United States">United States</option>
+                                        </select>
+                                    </label>
+                                    <label>
+                                        <p>State:<span style="color: red">*</span></p>
+                                        <select class="state" name="ctl00$PageContent$OnePageCheckout1$ShippingAddressEditView$ShipOtherState">
+                                            <option value="AL">Alabama</option>
+                                            <option value="AK">Alaska</option>
+                                            <option value="AS">American Samoa</option>
+                                            <option value="AZ">Arizona</option>
+                                            <option value="AR">Arkansas</option>
+                                            <option value="CA">California</option>
+                                            <option value="CO">Colorado</option>
+                                            <option value="CT">Connecticut</option>
+                                            <option value="DE">Delaware</option>
+                                            <option value="DC">District of Columbia</option>
+                                            <option value="FM">Federated States of Micronesia</option>
+                                            <option value="FL">Florida</option>
+                                            <option value="GA">Georgia</option>
+                                            <option value="GU">Guam</option>
+                                            <option value="HI">Hawaii</option>
+                                            <option value="ID">Idaho</option>
+                                            <option value="IL">Illinois</option>
+                                            <option value="IN">Indiana</option>
+                                            <option value="IA">Iowa</option>
+                                            <option value="KS">Kansas</option>
+                                            <option value="KY">Kentucky</option>
+                                            <option value="LA">Louisiana</option>
+                                            <option value="ME">Maine</option>
+                                            <option value="MH">Marshall Islands</option>
+                                            <option value="MD">Maryland</option>
+                                            <option value="MA">Massachusetts</option>
+                                            <option value="MI">Michigan</option>
+                                            <option value="MN">Minnesota</option>
+                                            <option value="MS">Mississippi</option>
+                                            <option value="MO">Missouri</option>
+                                            <option value="MT">Montana</option>
+                                            <option value="NE">Nebraska</option>
+                                            <option value="NV">Nevada</option>
+                                            <option value="NH">New Hampshire</option>
+                                            <option value="NJ">New Jersey</option>
+                                            <option value="NM">New Mexico</option>
+                                            <option selected="selected" value="NY">New York</option>
+                                            <option value="NC">North Carolina</option>
+                                            <option value="ND">North Dakota</option>
+                                            <option value="MP">Northern Mariana Islands</option>
+                                            <option value="OH">Ohio</option>
+                                            <option value="OK">Oklahoma</option>
+                                            <option value="OR">Oregon</option>
+                                            <option value="PW">Palau</option>
+                                            <option value="PA">Pennsylvania</option>
+                                            <option value="PR">Puerto Rico</option>
+                                            <option value="RI">Rhode Island</option>
+                                            <option value="SC">South Carolina</option>
+                                            <option value="SD">South Dakota</option>
+                                            <option value="TN">Tennessee</option>
+                                            <option value="TX">Texas</option>
+                                            <option value="UT">Utah</option>
+                                            <option value="VT">Vermont</option>
+                                            <option value="VI">Virgin Islands</option>
+                                            <option value="VA">Virginia</option>
+                                            <option value="WA">Washington</option>
+                                            <option value="WV">West Virginia</option>
+                                            <option value="WI">Wisconsin</option>
+                                            <option value="WY">Wyoming</option>
+                                        </select>
+                                    </label>
+                                    <label>
+                                        <p>AddressType:</p>
+                                        <select  disabled="disabled" name="ctl00$PageContent$ctrlAddress$AddressType">
+                                            <option value="0">Billing address</option>
+                                            <option value="1" selected="selected">Shipping address</option>
+                                        </select>
+                                    </label>
+                                </form>
+                                <label>                               
+                                    <input type="checkbox"  name="ctl00$PageContent$ctrlAddress$CustomerPrimary">
+                                    <p class="addressPrimary">Your primary shipping address</p>
+                                </label> 
+                            </div>
+                            <div class="footer_addressModal">
+                                <button class="default-button">Save</button>
+                                <a  data-remodal-action="cancel" class="remodal-cancel" href="#">Cancel</a>
+                            </div>      
+                        </div>
+                    </div>
+                    <!--  ------------------PreviewOrderAddressModal-------------------- -->
+
+                    <div class="remodal-bg">
+                        <div class="remodal PreviewOrderAddressModal" data-remodal-id="PreviewOrderAddressModal"  data-remodal-options="closeOnOutsideClick: false">
+                            <h3 class="icon-info-circled">Preview Order
+                                <span data-remodal-action="cancel" class="remodal-cancel cancel_right">x</span>
+                            </h3>
+                            <div class="content_modal">
+                                <div class="billTo">
+                                    <h2>Bill To:</h2>
+                                    <div class="billAddressWrap" >
+                                        <div>
+                                            <span class="ShippingAddress_FirstName">ovsyanikov</span>
+                                            <span class="ShippingAddress_LastName">vitalya</span>
+                                        </div>
+                                        <div>
+                                            <span class="ShippingAddress_Phone">763423564235473264</span>
+                                        </div>
+                                        <div>
+                                            <span class="ShippingAddress_Company">bmz</span>
+                                        </div>
+                                        <div>
+                                            <span class="ShippingAddress_Address1">karibskogo d16 kv84</span>
+                                        </div>
+                                        <div>
+                                            <span class="ShippingAddress_Address2">mkr16 d8 kv411</span>
+                                        </div>
+                                        <div>
+                                            <span class="ShippingAddress_City">Schenectady</span>
+                                            <span class="ShippingAddress_State">NY</span>
+                                            <span class="ShippingAddress_Zip">12345</span>
+                                        </div>
+                                        <div>
+                                            <span class="ShippingAddress_Country">United States</span>
+                                        </div>
+                                        <div>
+                                            <span class="ShippingAddress_Email">va.ovsynikov@gmail.com</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="shipTo">
+                                    <h2>Ship To:</h2>
+                                    <div class="shipAddressWrap">
+                                        <div>
+                                            <span class="ShippingAddress_FirstName">ovsyanikov</span>
+                                            <span class="ShippingAddress_LastName">vitalya</span>
+                                        </div>
+                                        <div>
+                                            <span class="ShippingAddress_Phone">763423564235473264</span>
+                                        </div>
+                                        <div>
+                                            <span class="ShippingAddress_Company">bmz</span>
+                                        </div>
+                                        <div >
+                                            <span class="ShippingAddress_Address1">karibskogo d16 kv84</span>
+                                        </div>
+                                        <div>
+                                            <span class="ShippingAddress_Address2">mkr16 d8 kv411</span>
+                                        </div>
+                                        <div>
+                                            <span class="ShippingAddress_City">Schenectady</span>
+                                            <span class="ShippingAddress_State">NY</span>
+                                            <span class="ShippingAddress_Zip">12345</span>
+                                        </div>
+                                        <div>
+                                            <span class="ShippingAddress_Country">United States</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="clear:both;"></div>
+                            <div class="modal_footer">
+                                <a  data-remodal-action="cancel" class="remodal-cancel" href="#">Close</a>
+                            </div>
+                        </div>
+                        <div class="preloader">
+                            <div class="updateProgressBackground"></div> 
+                            <div class="updateProgress">Working on your order...</div>
+                        </div>
+                    </div> 
+                </div>
+            </main>
+            <div class="footerTopLeft"></div>
+            <div class="footerTopRight"></div>
+            <footer>
+                <div class="footer">
+                    <div class="footerTop">
+                        <ul>
+                            <li>
+                                <a href="t-returns.aspx">RETURN POLICY</a>
+                            </li>
+                            <li>
+                                <a href="t-privacy.aspx">PRIVACY POLICY</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footerContent">
+                        <div class="company clearfix">
+                            <h5>Company</h5>
+                            <ul>
+                                <li>
+                                    <a href="t-about.aspx">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="t-press.aspx">Press Releases</a>
+                                </li>
+                                <li>
+                                    <a href="http://blog.officezilla.com/">OfficeZilla Blog</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://blog.officezilla.com/email-savings-signup/">Weekly Newsletter</a>
+                                </li>
+                                <li style="line-height:14px;">
+                                    <a target="_blank" href="http://franchise.officezilla.com/">Become an OfficeZilla Franchise!</a>
+                                </li>
+                                <li>
+                                    <div class="social">
+                                        <a class="icon-facebook-squared" target="_blank" href="https://www.facebook.com/OfficeZilla"></a>
+                                        <a class="icon-twitter-squared" target="_blank" href="https://twitter.com/#!/OfficeZilla"></a>
+                                        <a class="icon-linkedin-squared" target="_blank" href="http://www.linkedin.com/company/officezilla-llc"></a>
+                                        <a class="icon-pinterest-squared" target="_blank" href="http://pinterest.com/officezilla/"></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="help clearfix">
+                            <h5>Help</h5>
+                            <ul>
+                                <li>
+                                    <a href="t-faq.aspx">FAQs</a>
+                                </li>
+                                <li>
+                                    <a href="orderhistory.aspx">My Order Status</a>
+                                </li>
+                                <li>
+                                    <a href="t-shipping.aspx">Shipping Information</a>
+                                </li>
+                                <li>
+                                    <a href="t-contact.aspx">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="rma.aspx">Simple Return</a>
+                                </li>
+                                <li>
+                                    <a href="quickorder.aspx">Quick Order</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="site_info">
+                            <h5>Site Info</h5>
+                            <ul>
+                                <li>
+                                    <a href="t-sitemap.aspx">Site Map</a>
+                                </li>
+                                <li>
+                                    <a href="t-termsandconditions.aspx">Terms of Use</a>
+                                </li>
+                                <li>
+                                    <a href="t-privacy.aspx">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="footerLogo">
+                            <a target="_blank" href="http://www.bbb.org/atlanta/business-reviews/office-supplies/officezilla-in-kennesaw-ga-27431923">
+                                <img title="Better Business Bureau Accredited" alt="Better Business Bureau Seal" height="42" width="112" src="images/footer/ab-seal-horizontal.png">
+                            </a>
+                            <a target="GT__SIP" onclick="return gt__md();" href="https://smarticon.geotrust.com/smarticonprofile?Referer=https://www.officezilla.com" tabindex="1">
+                                <img  height="55" width="115" alt="Click for company profile" src="images/footer/smarticon.gif">
+                            </a>
+                        </div>
+                        <div class="footerLogo">
+                            <img width="109" height="42"  src="images/footer/hp-qualified-supplies-partner.gif" alt="HP-qualified supplies partner">
+                            <img width="100" height="66" src="images/footer/credit.png" alt="">
+                        </div>
+                        <div class="footerLogo">
+                            <a target="_blank" onclick="window.open('https://verify.authorize.net/anetseal/?pid=2f3aca07-8e95-4be4-9474-2f20cb53dfe0&rurl=https%3A//www.officezilla.com/','AuthorizeNetVerification','width=600,height=430,dependent=yes,resizable=yes,scrollbars=yes,menubar=no,toolbar=no,status=no,directories=no,location=yes'); return false;" onmouseout="window.status=''; return true;" onmouseover="window.status='http://www.authorize.net/'; return true;" href="https://verify.authorize.net/anetseal/?pid=2f3aca07-8e95-4be4-9474-2f20cb53dfe0&rurl=https%3A//www.officezilla.com/">
+                                <img width="90" height="72" alt="Authorize.Net Merchant - Click to Verify" src="images/footer/secure90x72.gif">
+                            </a>
+                        </div>
+                        <div class="copyright">
+                            <p><i>Prices, policies, and availability are subject to change without notice.</i></p>
+                            <p>©2011-2015 OfficeZilla. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div> 
+            </footer>
+        </div>
+    </body>
+</html>
